@@ -6,6 +6,16 @@ export interface Product {
   amount: number;
 }
 
+export interface FormattedProduct {
+  id: number;
+  title: string;
+  price: number;
+  image: string;
+  amount: number;
+  subTotal: () => string,
+  priceFormatted: string
+}
+
 export interface Stock {
   id: number;
   amount: number;
